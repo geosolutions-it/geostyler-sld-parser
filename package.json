@@ -40,7 +40,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "lint": "tslint --project tsconfig.json --config tslint.json && tsc --noEmit --project tsconfig.json",
-    "release": "np --no-yarn && git push https://github.com/terrestris/geostyler-sld-parser.git master --tags"
+    "release": "np --no-yarn && git push https://github.com/geosolutions-it/geostyler-sld-parser.git master --tags"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
