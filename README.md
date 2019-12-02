@@ -1,3 +1,8 @@
+# Fork info
+This repo has been forked because we needed to add [this](https://github.com/geosolutions-it/geostyler-sld-parser/commits/ms2) fix
+We are going to publish the **release** branch on npm GeoSolutions registry
+
+
 # geostyler-sld-parser
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/terrestris/geostyler-sld-parser.svg)](https://greenkeeper.io/)
