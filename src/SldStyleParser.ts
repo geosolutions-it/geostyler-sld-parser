@@ -1821,7 +1821,7 @@ export class SldStyleParser implements StyleParser {
       }
     }
 
-    if (iconSymbolizer.opacity) {
+    if (typeof iconSymbolizer.opacity !== 'undefined') {
       graphic[0].Opacity = iconSymbolizer.opacity;
     }
     if (iconSymbolizer.size) {
