@@ -31,13 +31,11 @@ import {
   OptionsV2
 } from 'xml2js';
 
-import {
-  isString as _isString,
-  isNumber as _isNumber,
-  get as _get,
-  set as _set,
-  isEmpty as _isEmpty
-} from 'lodash';
+const _isString = require('lodash/isString');
+const _isNumber = require('lodash/isNumber');
+const _get = require('lodash/get');
+const _set = require('lodash/set');
+const _isEmpty = require('lodash/isEmpty');
 
 export type ConstructorParams = {
   forceCasting?: boolean,
