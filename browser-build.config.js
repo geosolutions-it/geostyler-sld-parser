@@ -1,12 +1,13 @@
 const TerserPlugin = require('terser-webpack-plugin');
 require("@babel/polyfill");
+const path = require("path");
 
 module.exports = {
   entry: ["@babel/polyfill", "./src/SldStyleParser.ts"],
   mode: 'production',
   output: {
     filename: "sldStyleParser.js",
-    path: __dirname + "/browser",
+    path: path.join(__dirname, "browser"),
     library: "GeoStylerSLDParser"
   },
   resolve: {
@@ -23,7 +24,7 @@ module.exports = {
       // All files with a '.ts'
       {
         test: /\.ts$/,
-        include: __dirname + '/src',
+        include: path.join(__dirname, 'src'),
         use: [
           {
             loader: require.resolve('ts-loader'),
