@@ -37,7 +37,6 @@ import {
   get as _get,
   set as _set,
   isEmpty as _isEmpty
-
 } from 'lodash';
 
 export type ConstructorParams = {
