@@ -476,7 +476,7 @@ export class SldStyleParser implements StyleParser {
     const opacity = _get(sldSymbolizer, 'Graphic[0].Opacity[0]');
     const size = _get(sldSymbolizer, 'Graphic[0].Size[0]');
     const rotate = _get(sldSymbolizer, 'Graphic[0].Rotation[0]');
-    if (opacity) {
+    if (typeof opacity !== 'undefined') {
       iconSymbolizer.opacity = opacity;
     }
     if (size) {
@@ -1821,7 +1821,7 @@ export class SldStyleParser implements StyleParser {
       }
     }
 
-    if (iconSymbolizer.opacity) {
+    if (typeof iconSymbolizer.opacity !== 'undefined') {
       graphic[0].Opacity = iconSymbolizer.opacity;
     }
     if (iconSymbolizer.size) {
