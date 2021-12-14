@@ -1,4 +1,5 @@
 require("@babel/polyfill");
+const path = require("path");
 
 module.exports = {
   entry: ["@babel/polyfill", "./src/SldStyleParser.ts"],
@@ -10,7 +11,12 @@ module.exports = {
   },
   resolve: {
     // Add '.ts' as resolvable extensions.
-    extensions: [".ts", ".js", ".json"]
+    extensions: [".ts", ".js", ".json"],
+    fallback: {
+      "timers": false,
+      "buffer": false,
+      "stream": false
+    }
   },
   module: {
     rules: [
